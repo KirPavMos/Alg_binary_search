@@ -39,9 +39,3 @@ for value in test_values:
     bin_idx = binary_search(sorted_list, value)
     lin_idx = linear_search(sorted_list, value)
     print(f"Значение {value}: бинарный поиск -> {bin_idx}, линейный поиск -> {lin_idx}")
-
-# Сравнение времени выполнения
-def measure_time(search_func, arr, target):
-    start = time.perf_counter()
-    search_func(arr, target)
-    return time.perf_counter() - start
